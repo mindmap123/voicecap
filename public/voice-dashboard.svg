@@ -1,0 +1,33 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" fill="#08111F"/>
+  <rect x="80" y="70" width="1040" height="640" rx="36" fill="#101A2E" stroke="#2B3954"/>
+  <rect x="122" y="118" width="310" height="92" rx="24" fill="#F3F0E8"/>
+  <text x="152" y="155" fill="#08111F" font-family="Arial, sans-serif" font-size="20" font-weight="700">Appels recuperes</text>
+  <text x="152" y="190" fill="#08111F" font-family="Arial, sans-serif" font-size="36" font-weight="900">42</text>
+  <rect x="462" y="118" width="310" height="92" rx="24" fill="#66E3FF"/>
+  <text x="492" y="155" fill="#08111F" font-family="Arial, sans-serif" font-size="20" font-weight="700">RDV qualifies</text>
+  <text x="492" y="190" fill="#08111F" font-family="Arial, sans-serif" font-size="36" font-weight="900">18</text>
+  <rect x="802" y="118" width="230" height="92" rx="24" fill="#FF7A59"/>
+  <text x="832" y="155" fill="#08111F" font-family="Arial, sans-serif" font-size="20" font-weight="700">Urgents</text>
+  <text x="832" y="190" fill="#08111F" font-family="Arial, sans-serif" font-size="36" font-weight="900">7</text>
+  <rect x="122" y="260" width="910" height="74" rx="22" fill="#16243A" stroke="#2B3954"/>
+  <circle cx="164" cy="297" r="14" fill="#66E3FF"/>
+  <text x="198" y="290" fill="#F3F0E8" font-family="Arial, sans-serif" font-size="18" font-weight="700">Devis chauffage</text>
+  <text x="198" y="316" fill="#AEB8C8" font-family="Arial, sans-serif" font-size="15">Budget confirme · rappel aujourd'hui · transcript envoye</text>
+  <rect x="842" y="282" width="146" height="30" rx="15" fill="#66E3FF"/>
+  <text x="874" y="303" fill="#08111F" font-family="Arial, sans-serif" font-size="13" font-weight="800">RDV pris</text>
+  <rect x="122" y="354" width="910" height="74" rx="22" fill="#16243A" stroke="#2B3954"/>
+  <circle cx="164" cy="391" r="14" fill="#FF7A59"/>
+  <text x="198" y="384" fill="#F3F0E8" font-family="Arial, sans-serif" font-size="18" font-weight="700">Demande apres fermeture</text>
+  <text x="198" y="410" fill="#AEB8C8" font-family="Arial, sans-serif" font-size="15">Prospect chaud · question tarif · tache de rappel creee</text>
+  <rect x="842" y="376" width="146" height="30" rx="15" fill="#FF7A59"/>
+  <text x="866" y="397" fill="#08111F" font-family="Arial, sans-serif" font-size="13" font-weight="800">A rappeler</text>
+  <rect x="122" y="448" width="910" height="74" rx="22" fill="#16243A" stroke="#2B3954"/>
+  <circle cx="164" cy="485" r="14" fill="#66E3FF"/>
+  <text x="198" y="478" fill="#F3F0E8" font-family="Arial, sans-serif" font-size="18" font-weight="700">Visite appartement</text>
+  <text x="198" y="504" fill="#AEB8C8" font-family="Arial, sans-serif" font-size="15">Bien identifie · disponibilite collectee · email envoye</text>
+  <rect x="842" y="470" width="146" height="30" rx="15" fill="#66E3FF"/>
+  <text x="868" y="491" fill="#08111F" font-family="Arial, sans-serif" font-size="13" font-weight="800">Qualifie</text>
+  <path d="M162 604C272 546 354 654 458 590C562 526 642 548 734 504C826 460 914 488 1030 426" stroke="#66E3FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M162 638C286 620 352 644 456 626C560 608 652 660 744 612C836 564 914 592 1030 558" stroke="#FF7A59" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+</svg>
