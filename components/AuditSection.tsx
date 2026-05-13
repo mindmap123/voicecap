@@ -1,4 +1,19 @@
+"use client";
+import { useState } from "react";
+
 export function AuditSection() {
+  const [nom, setNom] = useState("");
+  const [contact, setContact] = useState("");
+  const [activite, setActivite] = useState("");
+  const [appels, setAppels] = useState("Appels manqués / semaine");
+
+  const handleSubmit = () => {
+    const phone = "33626834020";
+    const message = `🎯 Nouvelle demande de démo VoiceCaptur\n\n👤 Nom : ${nom}\n📞 Contact : ${contact}\n🏢 Activité : ${activite}\n📊 Appels manqués/semaine : ${appels}`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="audit" className="scroll-mt-[2rem] px-4 py-6 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-5xl">
@@ -32,7 +47,7 @@ export function AuditSection() {
               </div>
 
               {/* Right - form */}
-              <form className="relative" name="voice-agent-audit">
+              <form className="relative" name="voice-agent-audit" onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
                 {/* Mobile title */}
                 <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/50 lg:hidden">Démo</p>
                 <h2 className="mt-2 mb-4 text-2xl font-black text-white lg:hidden">Voyez votre agent en action.</h2>
@@ -49,18 +64,31 @@ export function AuditSection() {
 
                 <div className="grid gap-3 sm:gap-4">
                   <input
+                    value={nom}
+                    onChange={(e) => setNom(e.target.value)}
                     className="rounded-xl border border-white/[0.1] bg-white/[0.1] px-4 py-3 text-sm font-medium text-white placeholder-white/40 outline-none transition-all focus:border-white/30 focus:bg-white/[0.14] focus:ring-1 focus:ring-white/20"
                     placeholder="Votre nom"
+                    required
                   />
                   <input
+                    value={contact}
+                    onChange={(e) => setContact(e.target.value)}
                     className="rounded-xl border border-white/[0.1] bg-white/[0.1] px-4 py-3 text-sm font-medium text-white placeholder-white/40 outline-none transition-all focus:border-white/30 focus:bg-white/[0.14] focus:ring-1 focus:ring-white/20"
                     placeholder="Email ou téléphone"
+                    required
                   />
                   <input
+                    value={activite}
+                    onChange={(e) => setActivite(e.target.value)}
                     className="rounded-xl border border-white/[0.1] bg-white/[0.1] px-4 py-3 text-sm font-medium text-white placeholder-white/40 outline-none transition-all focus:border-white/30 focus:bg-white/[0.14] focus:ring-1 focus:ring-white/20"
                     placeholder="Activité (artisan, cabinet, agence...)"
+                    required
                   />
-                  <select className="rounded-xl border border-white/[0.1] bg-white/[0.1] px-4 py-3 text-sm font-medium text-white outline-none transition-all focus:border-white/30 focus:bg-white/[0.14] focus:ring-1 focus:ring-white/20">
+                  <select
+                    value={appels}
+                    onChange={(e) => setAppels(e.target.value)}
+                    className="rounded-xl border border-white/[0.1] bg-white/[0.1] px-4 py-3 text-sm font-medium text-white outline-none transition-all focus:border-white/30 focus:bg-white/[0.14] focus:ring-1 focus:ring-white/20"
+                  >
                     <option className="bg-ink">Appels manqués / semaine</option>
                     <option className="bg-ink">1 à 5</option>
                     <option className="bg-ink">6 à 15</option>
@@ -70,7 +98,7 @@ export function AuditSection() {
                 </div>
                 <button
                   className="mt-4 w-full rounded-xl bg-white px-6 py-3.5 text-sm font-black text-ink transition-all duration-300 hover:bg-white/90 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
-                  type="button"
+                  type="submit"
                 >
                   Voir une démo
                 </button>
