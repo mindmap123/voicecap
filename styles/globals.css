@@ -29,7 +29,7 @@ body {
 
 @media (max-width: 767px) {
   body {
-    padding-bottom: 4.5rem;
+    padding-bottom: 0;
   }
 }
 
